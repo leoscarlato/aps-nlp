@@ -30,7 +30,7 @@ Desta forma, o dataset é um problema de classificação multiclasse, onde o obj
     - 5.000 linhas
     - 10.000 linhas
     - 20.000 linhas
-    - Dataset completo (53.000 linhas)
+    - Dataset completo (~ 53.000 linhas)
 
 4. **Treinamento e Avaliação dos Modelos**: para cada conjunto de dados, os modelos foram treinados e avaliados utilizando de acordo com as seguintes métricas:
     - **Acurácia**: proporção de previsões corretas em relação ao total de previsões.
