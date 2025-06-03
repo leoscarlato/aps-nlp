@@ -21,7 +21,7 @@ A metodologia adotada para a análise de desempenho dos modelos inclui as seguin
         - `Suicidal`
         - `Bipolar`
 
-Desta forma, o dataset é um problema de classificação multiclasse, onde o objetivo é classificar os textos em uma das cinco categorias mencionadas.
+    Desta forma, o dataset é um problema de classificação multiclasse, onde o objetivo é classificar os textos em uma das cinco categorias mencionadas.
 
 2. **Pré-processamento dos Dados**: nesta etapa, foi realizada a remoção de linhas nulas, de forma a garantir que o dataset esteja completo e pronto para análise.
 
