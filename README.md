@@ -21,7 +21,7 @@ A metodologia adotada para a análise de desempenho dos modelos inclui as seguin
         - `Suicidal`
         - `Bipolar`
 
-Desta forma, o dataset é um problema de classificação multiclasse, onde o objetivo é classificar os textos em uma das cinco categorias mencionadas.
+    Desta forma, o dataset é um problema de classificação multiclasse, onde o objetivo é classificar os textos em uma das cinco categorias mencionadas.
 
 2. **Pré-processamento dos Dados**: nesta etapa, foi realizada a remoção de linhas nulas, de forma a garantir que o dataset esteja completo e pronto para análise.
 
@@ -30,14 +30,18 @@ Desta forma, o dataset é um problema de classificação multiclasse, onde o obj
     - 5.000 linhas
     - 10.000 linhas
     - 20.000 linhas
-    - Dataset completo (53.000 linhas)
+    - Dataset completo (~ 53.000 linhas)
 
 4. **Treinamento e Avaliação dos Modelos**: para cada conjunto de dados, os modelos foram treinados e avaliados utilizando de acordo com as seguintes métricas:
     - **Acurácia**: proporção de previsões corretas em relação ao total de previsões.
-    - **Precisão**: proporção de previsões positivas corretas em relação ao total de previsões positivas.
-    - **Recall**: proporção de previsões positivas corretas em relação ao total de casos positivos reais.
-    - **F1-Score**: média harmônica entre precisão e recall, que considera tanto falsos positivos quanto falsos negativos.
+    - **F1-Score**: média harmônica entre:
+        - **Precision**: proporção de previsões positivas corretas em relação ao total de previsões positivas. 
+        
+            `Precision = TP / (TP + FP)`, onde TP é o número de verdadeiros positivos e FP é o número de falsos positivos.
 
+        - **Recall**: proporção de previsões positivas corretas em relação ao total de casos positivos reais.
+        
+            `Recall = TP / (TP + FN)`, onde TP é o número de verdadeiros positivos e FN é o número de falsos negativos.
 Além disso, foram gerados gráficos de matriz de confusão para cada modelo, permitindo uma visualização clara do desempenho do modelo em cada classe.
 
 5. **Análise dos Resultados**: os resultados foram analisados para identificar tendências e padrões de desempenho dos modelos em relação à quantidade de dados disponíveis.
