@@ -11,7 +11,7 @@ O objetivo deste projeto consiste em analisar o desempenho de diferentes abordag
 ### Metodologia
 A metodologia adotada para a análise de desempenho dos modelos inclui as seguintes etapas:
 
-1. **Coleta de Dados**: para a análise, escolhemos o dataset [Sentiment Analysis for Mental Health](https://www.kaggle.com/datasets/suchintikasarkar/sentiment-analysis-for-mental-health) do Kaggle, que contém cerca de 53 mil linhas, com 3 colunas:
+1. **Coleta de Dados**: para a análise, escolhemos o dataset [Sentiment Analysis for Mental Health](https://www.kaggle.com/datasets/suchintikasarkar/sentiment-analysis-for-mental-health) do Kaggle, que contém 52.681, com 3 colunas:
     - `unique_id`: identificador único da linha
     - `statement`: texto a ser classificado
     - `status`: rótulo de classificação, que pode ser:
@@ -34,14 +34,23 @@ A metodologia adotada para a análise de desempenho dos modelos inclui as seguin
 
 4. **Treinamento e Avaliação dos Modelos**: para cada conjunto de dados, os modelos foram treinados e avaliados utilizando de acordo com as seguintes métricas:
     - **Acurácia**: proporção de previsões corretas em relação ao total de previsões.
-    - **F1-Score**: média harmônica entre:
-        - **Precision**: proporção de previsões positivas corretas em relação ao total de previsões positivas. 
-        
-            `Precision = TP / (TP + FP)`, onde TP é o número de verdadeiros positivos e FP é o número de falsos positivos.
-
+    - **F1-Score**: média harmônica entre as métricas Precision e Recall:
+      
+        - **Precision**: proporção de previsões positivas corretas em relação ao total de previsões positivas.
+  
+          $\text{Precision} \=\ \frac{\mathrm{TP}}{\mathrm{TP} + \mathrm{FP}}$, onde:
+  
+          - TP (True Positives) são os verdadeiros positivos
+          - FP (False Positives) são os falsos positivos
+    
         - **Recall**: proporção de previsões positivas corretas em relação ao total de casos positivos reais.
         
-            `Recall = TP / (TP + FN)`, onde TP é o número de verdadeiros positivos e FN é o número de falsos negativos.
+          $\text{Recall} \=\ \frac{\mathrm{TP}}{\mathrm{TP} + \mathrm{FN}}$, onde:
+          
+          - TP (True Positives) são os verdadeiros positivos
+          - FN (False Negatives) são os falsos negativos
+
+      
 Além disso, foram gerados gráficos de matriz de confusão para cada modelo, permitindo uma visualização clara do desempenho do modelo em cada classe.
 
 5. **Análise dos Resultados**: os resultados foram analisados para identificar tendências e padrões de desempenho dos modelos em relação à quantidade de dados disponíveis.
