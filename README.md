@@ -1,5 +1,7 @@
 # Análise de Desempenho de Modelos com base na Quantidade de Dados Disponíveis
 
+Membros: Leonardo Scarlato e João Alfredo Cardoso Lamy
+
 ## Introdução
 No cenário atual de tecnologias de NLP, observam-se discussões sobre diferentes metodologias e ferramentas utilizadas em projetos e sistemas de classificação. De um lado, estão as abordagens tradicionais como Bag of Words (BoW), combinadas com algoritmos lineares como Regressão Logística, que se destacam pela simplicidade e desempenho competitivo em cenários com dados limitados. Do outro, os modelos baseados em transformers, como o BERT, vêm ganhando espaço por sua capacidade de capturar contexto, semântica e dependências complexas entre palavras, fatores que tornam essas soluções mais robustas, especialmente em contextos com maior volume de dados.
 
