@@ -92,7 +92,7 @@ Os resultados aqui obtidos seguem o padrão visto em [When BERT Meets Bilbo: A L
 
 - Em volumes intermediários (algumas milhares de amostras), o BERT supera de forma consistente o BoW em acurácia e F1, confirmando que seu poder semântico se destaca quando há dados suficientes;
 
-- Em grandes volumes de dados, ambos convergem para desempenhos muito próximos.
+- Em grandes volumes de dados, ambos convergem para desempenhos próximos.
 
 Dessa forma, concluímos que a escolha entre modelos tradicionais e modelos baseados em transformers deve considerar não apenas a complexidade do problema, mas também a quantidade de dados disponível. O BoW se mostra eficiente e competitivo em cenários com dados limitados, enquanto o BERT demonstra sua superioridade em situações onde há dados suficientes para explorar sua capacidade contextual. No entanto, quando o volume de dados é alto, o custo computacional do BERT pode não justificar a pequena diferença de desempenho em relação ao BoW, tornando este último uma alternativa viável e eficiente. Assim, os resultados obtidos não apenas validam as tendências apontadas no artigo de referência, como também reforçam a importância de alinhar a escolha do modelo ao contexto e aos recursos do projeto.
 
